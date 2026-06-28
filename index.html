@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>भारतीय आरोग्य केंद्र - पतंजलि स्टोर</title>
+    <style>
+        body { font-family: 'Segoe UI', Arial, sans-serif; padding: 15px; background-color: #f4f7f6; margin: 0; }
+        .header { background-color: #2e7d32; color: white; text-align: center; padding: 25px 15px; border-radius: 12px; margin-bottom: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+        .header h1 { margin: 0; font-size: 26px; font-weight: bold; }
+        .header p { margin: 8px 0 0 0; font-size: 14px; opacity: 0.9; font-style: italic; }
+        .product-grid { display: grid; grid-template-columns: 1fr; gap: 15px; }
+        .product-card { background: white; padding: 15px; border-radius: 12px; box-shadow: 0 2px 6px rgba(0,0,0,0.05); border-left: 6px solid #ff9933; }
+        .product-name { font-size: 18px; font-weight: bold; color: #333; margin: 5px 0; }
+        .category { font-size: 11px; background: #fff3e0; color: #e65100; padding: 4px 10px; border-radius: 20px; display: inline-block; font-weight: bold; }
+        .price { font-size: 16px; color: #d32f2f; font-weight: bold; margin: 8px 0; }
+        .stock { font-size: 13px; color: #2e7d32; font-weight: bold; }
+        .out-of-stock { color: #c62828; }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>भारतीय आरोग्य केंद्र</h1>
+        <p>पतंजलि स्टोर | शुद्ध, स्वदेशी और प्राकृतिक उत्पाद</p>
+    </div>
+
+    <div class="product-grid" id="shop-container"></div>
+
+    <script>
+        const patanjaliData = [
+          { "item_id": 1, "name": "पतंजलि गाय का घी (1 लीटर)", "category": "खाद्य पदार्थ", "price": "₹650", "in_stock": true },
+          { "item_id": 2, "name": "दंत कांति टूथपेस्ट (200g)", "category": "पर्सनलケア", "price": "₹110", "in_stock": true },
+          { "item_id": 3, "name": "एलोवेरा जूस (1 लीटर)", "category": "स्वास्थ्य पेय", "price": "₹220", "in_stock": false },
+          { "item_id": 4, "name": "पतंजलि केस कांति तेल (200ml)", "category": "हेयर केयर", "price": "₹150", "in_stock": true }
+        ];
+
+        const container = document.getElementById('shop-container');
+        patanjaliData.forEach(item => {
+            const card = document.createElement('div');
+            card.className = 'product-card';
+            const stockText = item.in_stock ? "✓ दुकान में उपलब्ध है" : "✕ अभी खत्म है (Out of Stock)";
+            const stockClass = item.in_stock ? "stock" : "stock out-of-stock";
+            card.innerHTML = `
+                <div class="category">${item.category}</div>
+                <div class="product-name">${item.name}</div>
+                <div class="price">कीमत: ${item.price}</div>
+                <div class="${stockClass}">${stockText}</div>
+            `;
+            container.appendChild(card);
+        });
+    </script>
+
+</body>
+</html>
