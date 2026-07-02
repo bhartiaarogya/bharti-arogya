@@ -1,123 +1,120 @@
-
 <!DOCTYPE html>
 <html lang="hi">
-<शीर्षक>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<शीर्षक>भारतीय स्वास्थ्य केंद्र - प्लास्टिक स्टोर</शीर्षक>
-<style>
-body { font-family: 'Segoe UI', Arial, sans-serif; padding: 15px; background-color: #f4f7f6; margin: 0; }
-.header { background-color: #2e7d32; color: white; text-align: center; padding: 25px 15px; border-radius: 12px; margin-bottom: 20px; }
-.header h1 { मार्जिन: 0; फ़ॉन्ट आकार: 26px; }
-.header p { मार्जिन: 8px 0 0 0; फ़ॉन्ट आकार: 14px; अपारदर्शिता: 0.9; }
-.search-box { width: 100%; max-width: 500px; padding: 12px; margin: 0 auto 20px auto; display: block; border: 2px solid #2e7d32; border-radius: 8px; font-size: 16px; box-sizing: border-box; }
-.product-grid { display: grid; grid-template-columns: 1fr; gap: 20px; }
-@media(min-width: 600px) { .product-grid { grid-template-columns: 1fr 1fr; } }
-@media(min-width: 900px) { .product-grid { grid-template-columns: 1fr 1fr 1fr; } }
-.product-card { background: white; padding: 20px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); border-left: 6px solid #ff9933; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: space-between; }
-.product-img { चौड़ाई: 100%; अधिकतम चौड़ाई: 160px; ऊंचाई: 160px; ऑब्जेक्ट-फिट: कंटेन; बॉर्डर-रेडियस: 8px; मार्जिन-बॉटम: 12px; }
-.product-name { font-size: 16px; font-weight: bold; color: #333; margin: 8px 0; min-height: 40px; display: flex; align-items: center; justify-content: center; }
-.category { font-size: 11px; background: #fff3e0; color: #e65100; padding: 4px 12px; border-radius: 20px; display: inline-block; font-weight: bold; }
-.price { font-size: 18px; color: #d32f2f; font-weight: bold; margin: 6px 0; }
-.item-code { font-size: 11px; color: #777; margin-bottom: 8px; }
-.stock { font-size: 13px; color: #2e7d32; font-weight: bold; background: #e8f5e9; padding: 4px 12px; border-radius: 6px; display: inline-block; margin-top: 5px; }
-</style>
-</शीर्षक>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>भारतीय आरोग्य केंद्र - पतंजलि स्टोर</title>
+    <style>
+        body { font-family: 'Segoe UI', Arial, sans-serif; padding: 15px; background-color: #f4f7f6; margin: 0; }
+        .header { background-color: #2e7d32; color: white; text-align: center; padding: 25px 15px; border-radius: 12px; margin-bottom: 20px; }
+        .header h1 { margin: 0; font-size: 26px; }
+        .header p { margin: 8px 0 0 0; font-size: 14px; opacity: 0.9; }
+        .search-box { width: 100%; max-width: 500px; padding: 12px; margin: 0 auto 20px auto; display: block; border: 2px solid #2e7d32; border-radius: 8px; font-size: 16px; box-sizing: border-box; }
+        .product-grid { display: grid; grid-template-columns: 1fr; gap: 20px; }
+        @media(min-width: 600px) { .product-grid { grid-template-columns: 1fr 1fr; } }
+        @media(min-width: 900px) { .product-grid { grid-template-columns: 1fr 1fr 1fr; } }
+        .product-card { background: white; padding: 20px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); border-left: 6px solid #ff9933; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: space-between; }
+        .product-img { width: 100%; max-width: 160px; height: 160px; object-fit: contain; border-radius: 8px; margin-bottom: 12px; }
+        .product-name { font-size: 16px; font-weight: bold; color: #333; margin: 8px 0; min-height: 40px; display: flex; align-items: center; justify-content: center; }
+        .category { font-size: 11px; background: #fff3e0; color: #e65100; padding: 4px 12px; border-radius: 20px; display: inline-block; font-weight: bold; }
+        .price { font-size: 18px; color: #d32f2f; font-weight: bold; margin: 6px 0; }
+        .item-code { font-size: 11px; color: #777; margin-bottom: 8px; }
+        .whatsapp-btn { background-color: #25d366; color: white; text-decoration: none; padding: 10px 15px; border-radius: 8px; font-weight: bold; font-size: 14px; display: inline-flex; align-items: center; gap: 8px; margin-top: 10px; width: 85%; justify-content: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .whatsapp-btn:hover { background-color: #128c7e; }
+    </style>
+</head>
 <body>
 
-<div class="header">
-<h1>भारतीय स्वास्थ्य केंद्र</h1>
-<p>बिला सिमरी, खगड़िया (बिहार) | प्राकृतिक आधिकारिक स्टोर</p>
-</div>
+    <div class="header">
+        <h1>भारतीय आरोग्य केंद्र</h1>
+        <p>बिला सिमरी, खगड़िया (बिहार) | पतंजलि अधिकृत स्टोर</p>
+        <p style="margin-top: 5px; font-weight: bold; background: rgba(0,0,0,0.2); display: inline-block; padding: 3px 10px; border-radius: 5px;">📞 WhatsApp ऑर्डर: 8010291813</p>
+    </div>
 
-<!-- ऑनलाइन सामान खोजने का सर्च बॉक्स -->
-<इनपुट प्रकार = "टेक्स्ट" आईडी = "सर्चबार" क्लास = "सर्च-बॉक्स" प्लेसहोल्डर = "सामान का नाम सूचीबद्ध (जैसे: घी, बिस्किट)..." onkeyup = "searchProducts()">
+    <input type="text" id="searchBar" class="search-box" placeholder="सामान का नाम खोजें (जैसे: GHEE, BISCUIT)..." onkeyup="searchProducts()">
 
-<div class="product-grid" id="productContainer">
-<!-- सभी उत्पाद यहाँ पर स्ट्राइक लोडहोगे -->
-</div>
+    <div class="product-grid" id="productContainer"></div>
 
-<script>
-// आपके बिल से निकले और पूरे स्टॉक डेटा (आइटम कोड, नाम, वेट एमआरपी)
-स्थिरांक उत्पाद = [
-{आईडी: "180031035", नाम: "गाय का घी", वजन: "450 एमएल", एमआरपी: "393.00", बिल्ली: "खाद्य पदार्थ" },
-{आईडी: "180031036", नाम: "गाय का घी", वजन: "900 एमएल", एमआरपी: "731.00", बिल्ली: "खाद्य पदार्थ" },
-{आईडी: "180002957", नाम: "गाय का घी", वजन: "200 एमएल", एमआरपी: "178.00", बिल्ली: "खाद्य पदार्थ" },
-{आईडी: "180002849", नाम: "शहद", वजन: "250 ग्राम", एमआरपी: "110.00", बिल्ली: "खाद्य पदार्थ" },
-{आईडी: "180002853", नाम: "शहद", वजन: "100 ग्राम", एमआरपी: "55.00", बिल्ली: "खाद्य पदार्थ" },
-{आईडी: "180002829", नाम: "गिलोय जूस", वजन: "500 एमएल", एमआरपी: "90.00", बिल्ली: "स्वास्थ्य पेय" },
-{आईडी: "150001043", नाम: "दूध बिस्किट", वजन: "35 ग्राम", एमआरपी: "5.00", बिल्ली: "बिस्कुट और गोदाम" },
-{आईडी: "150001045", नाम: "दूध बिस्किट", वजन: "70 ग्राम", एमआरपी: "10.00", बिल्ली: "बिस्कुट और गोदाम" },
-{आईडी: "150001799", नाम: "नारियल बिस्किट", वजन: "68 जीएम", एमआरपी: "10.00", बिल्ली: "बिस्कुट और बिस्कुट" },
-{आईडी: "150001611", नाम: "नमकीन बिस्किट", वजन: "60 ग्राम", एमआरपी: "10.00", बिल्ली: "बिस्कुट और गोदाम" },
-{ id: "180026257", name: "DANT KANTI NATURAL TOOTHPASTE (Free Brush)", weight: "300G", mrp: "168.00", cat: "ओरल केयर" },
-{ id: "9954000011", name: "नारियल तेल", weight: "200 मिली", mrp: "110.00", cat: "केस केयर" }
-{आईडी: "180031120", नाम: "सौंदर्या एलोवेरा जेल", वजन: "100एमएल", एमआरपी: "75.00", कैट: "स्किन केयर" },
-{ id: "180026218", name: "हल्दी चंदन कांति बॉडी क्लींजर", weight: "45 ग्राम", mrp: "10.00", cat: "बाथ केयर" }
-{ id: "180026219", name: "नीम कांति बॉडी क्लींजर", weight: "45 ग्राम", mrp: "10.00", cat: "बाथ केयर" }
-{आईडी: "180026225", नाम: "सुपर डिशवॉश बार", वजन: "आरएस10/-", एमआरपी: "10.00", कैट: "होम केयर" },
-{ id: "8863000001", name: "GONYLE FLOOR CLEANER", weight: "1 LTR", mrp: "75.00", cat: "होम केयर" }
-{आईडी: "8855000246", नाम: "त्रिफला चूर्ण", वजन: "100जीएम", एमआरपी: "55.00", कैट: "दिव्य चूर्ण" },
-{आईडी: "9958000051", नाम: "गिलोय घन वटी", वजन: "60 पीसी", एमआरपी: "93.00", कैट: "दिव्य फ्रेम" },
-{आईडी: "8855000248", नाम: "दिव्य चंद्रप्रभा वटी", वजन: "120 टैब", एमआरपी: "190.00", कैट: "दिव्या चंद्रप्रभा वटी" },
-{ id: "150001192", name: "ट्विस्टी टेस्टी नूडल्स", weight: "50G", mrp: "10.00", cat: "खाद्य पदार्थ" }
-{ id: "150001656", name: "टूथब्रश (सेंसिटिव)", weight: "1 पीसी", mrp: "26.50", cat: "ओरल केयर" },
-{आईडी: "150000831", नाम: "सेंधा नमक", वजन: "1 किलोग्राम", एमआरपी: "60.00", बिल्ली: "खाद्य पदार्थ" },
-{आईडी: "8855000147", नाम: "दिव्य स्वासारि प्रवाही", वजन: "250 एमएल", एमआरपी: "10.00", बिल्ली: "दिव्य श्वासरि" },
-{आईडी: "150001647", नाम: "केश कांति हर्बल मेहंदी (गहरा भूरा)", वजन: "1 पीसी", एमआरपी: "20.00", बिल्ली: "केस केयर" },
-{आईडी: "150000834", नाम: "हर्बल पॉवरविटा प्लस", वजन: "500 जीएम जार", एमआरपी: "195.00", बिल्ली: "स्वास्थ्य पेय" },
-{आईडी: "180026185", नाम: "बाम", वजन: "25 ग्राम", एमआरपी: "56.00", बिल्ली: "दिव्य फ्रेम" },
-{आईडी: "180031141", नाम: "हनी 500जी (फ्री आंवला जूस 500एमएल)", वजन: "500जी", एमआरपी: "210.00", बिल्ली: "खाद्य पदार्थ" },
-{ id: "180031154", name: "DK NATURAL TP 43G (Free Flexi Brush)", weight: "43G", mrp: "20.00", cat: "ओरल केयर" },
-{ id: "180031393", name: "केश कांति डैंड्रफ हेयर क्लींजर", weight: "180ML", mrp: "115.00", cat: "केस केयर" }
-{ id: "180031392", name: "केश कांति हेयर क्लींजर नेचुरल", weight: "180ML", mrp: "89.00", cat: "केस केयर" }
-{ id: "180031364", name: "हल्दी चंदन कांति बॉडी क्लींजर", weight: "75 ग्राम", mrp: "25.00", cat: "बाथ केयर" }
-{ id: "180026553", name: "केश कांति हेयर क्लींजर नेचुरल (सैशे)", weight: "3.5 मिली", mrp: "1.00", cat: "केस केयर" }
-{आईडी: "9958000056", नाम: "शिलाजीत (स्ट्रिप)", वजन: "11 जीएम", एमआरपी: "93.00", बिल्ली: "दिव्य फ्रेम" },
-{आईडी: "180002974", नाम: "दालिया", वजन: "500 ग्राम", एमआरपी: "35.00", बिल्ली: "खाद्य पदार्थ" },
-{ id: "180026259", name: "केश कांति एडवांस्ड हेयर एक्सपर्ट ऑयल", weight: "100ML", mrp: "356.00", cat: "केस केयर" }
-];
+    <script>
+        const products = [
+            { id: "180031035", name: "COWS GHEE", weight: "450 ML", mrp: "393.00", cat: "खाद्य पदार्थ" },
+            { id: "180031036", name: "COWS GHEE", weight: "900 ML", mrp: "731.00", cat: "खाद्य पदार्थ" },
+            { id: "180002957", name: "COWS GHEE", weight: "200 ML", mrp: "178.00", cat: "खाद्य पदार्थ" },
+            { id: "180002849", name: "HONEY", weight: "250 G", mrp: "110.00", cat: "खाद्य पदार्थ" },
+            { id: "180002853", name: "HONEY", weight: "100 GM", mrp: "55.00", cat: "खाद्य पदार्थ" },
+            { id: "180002829", name: "GILOY JUICE", weight: "500 ML", mrp: "90.00", cat: "स्वास्थ्य पेय" },
+            { id: "150001043", name: "DOODH BISCUIT", weight: "35 GM", mrp: "5.00", cat: "बिस्कुट व स्नैक्स" },
+            { id: "150001045", name: "DOODH BISCUIT", weight: "70 GM", mrp: "10.00", cat: "बिस्कुट व स्नैक्स" },
+            { id: "150001799", name: "NARIYAL BISCUIT", weight: "68 GM", mrp: "10.00", cat: "बिस्कुट व स्नैक्स" },
+            { id: "150001611", name: "NAMKEEN BISCUIT", weight: "60G", mrp: "10.00", cat: "बिस्कुट व स्नैक्स" },
+            { id: "180026257", name: "DANT KANTI NATURAL TOOTHPASTE", weight: "300G", mrp: "168.00", cat: "ओरल केयर" },
+            { id: "9954000011", name: "COCONUT OIL", weight: "200 ML", mrp: "110.00", cat: "केस केयर" },
+            { id: "180031120", name: "SAUNDARYA ALOEVERA GEL", weight: "100ML", mrp: "75.00", cat: "स्किन केयर" },
+            { id: "180026218", name: "HALDI CHANDAN KANTI BODY CLEANSER", weight: "45G", mrp: "10.00", cat: "बाथ केयर" },
+            { id: "180026219", name: "NEEM KANTI BODY CLEANSER", weight: "45G", mrp: "10.00", cat: "बाथ केयर" },
+            { id: "180026225", name: "SUPER DISHWASH BAR", weight: "RS10/-", mrp: "10.00", cat: "होम केयर" },
+            { id: "8863000001", name: "GONYLE FLOOR CLEANER", weight: "1 LTR", mrp: "75.00", cat: "होम केयर" },
+            { id: "8855000246", name: "TRIPHALA CHURNA", weight: "100GM", mrp: "55.00", cat: "दिव्या फार्मेसी" },
+            { id: "9958000051", name: "GILOY GHAN VATI", weight: "60 PC", mrp: "93.00", cat: "दिव्या फार्मेसी" },
+            { id: "8855000248", name: "DIVYA CHANDRAPRABHA VATI", weight: "120 TAB", mrp: "190.00", cat: "दिव्या फार्मेसी" },
+            { id: "150001192", name: "TWISTY TASTY NOODLES", weight: "50G", mrp: "10.00", cat: "खाद्य पदार्थ" },
+            { id: "150001656", name: "TOOTHBRUSH (SENSITIVE)", weight: "1 PC", mrp: "26.50", cat: "ओरल केयर" },
+            { id: "150000831", name: "SENDHA NAMAK", weight: "1 KG", mrp: "60.00", cat: "खाद्य पदार्थ" },
+            { id: "8855000147", name: "DIVYA SWASARI PRAVAHI", weight: "250 ML", mrp: "100.00", cat: "दिव्या फार्मेसी" },
+            { id: "150001647", name: "KESH KANTI HERBAL MEHANDI", weight: "1 PC", mrp: "20.00", cat: "केस केयर" },
+            { id: "150000834", name: "HERBAL POWERVITA PLUS", weight: "500 GM JAR", mrp: "195.00", cat: "स्वास्थ्य पेय" },
+            { id: "180026185", name: "BALM", weight: "25 GM", mrp: "56.00", cat: "दिव्या फार्मेसी" },
+            { id: "180031141", name: "HONEY 500G (Free Amla)", weight: "500G", mrp: "210.00", cat: "खाद्य पदार्थ" },
+            { id: "180031154", name: "D.K. NATURAL TP 43G", weight: "43G", mrp: "20.00", cat: "ओरल केयर" },
+            { id: "180031393", name: "KESH KANTI DANDRUFF HAIR CLEANSER", weight: "180ML", mrp: "115.00", cat: "केस केयर" },
+            { id: "180031392", name: "KESH KANTI HAIR CLEANSER NATURAL", weight: "180ML", mrp: "89.00", cat: "केस केयर" },
+            { id: "180031364", name: "HALDI CHANDAN KANTI BODY CLEANSER", weight: "75G", mrp: "25.00", cat: "बाथ केयर" },
+            { id: "180026553", name: "KESH KANTI HAIR CLEANSER (Sachet)", weight: "3.5 ML", mrp: "1.00", cat: "केस केयर" },
+            { id: "9958000056", name: "SHILAJIT (Strip)", weight: "11 GM", mrp: "93.00", cat: "दिव्या फार्मेसी" },
+            { id: "180002974", name: "DALIA", weight: "500 G", mrp: "35.00", cat: "खाद्य पदार्थ" },
+            { id: "180026259", name: "KESH KANTI ADVANCED HAIR EXPERT OIL", weight: "100ML", mrp: "356.00", cat: "केस केयर" }
+        ];
 
-// पहले आपके द्वारा लोड की गई विशेष छवि का मिलान करने की सुविधा के लिए
-फ़ंक्शन getProductImage(id) {
-// जो घी की 2 इमेज आपने पहले ड्राइव की है
-if(id === "180031035") रिटर्न "phc006.webp"; // 1 लीटर / 900 मि.ली. घी पिसा के लिए
-अगर(आईडी === "180002957") वापसी "घी200एमएल2(2)_1739246972.वेब"; // 200ml घी के लिए
-// बाकी सभी के लिए मूर्तिकला उनके स्मारक कोड के नाम से फोटो ढूंढेगा
-आईडी + ".webp" लौटाएँ;
-}
+        function getProductImage(id) {
+            if(id === "180031035") return "phc006.webp";
+            if(id === "180002957") return "ghee200ml2(2)_1739246972.webp";
+            return id + ".webp"; 
+        }
 
-फ़ंक्शन डिस्प्लेप्रोडक्ट्स(प्रोडक्ट्सलिस्ट) {
-const कंटेनर = document.getElementById('productContainer');
-कंटेनर.इनरएचटीएमएल = '';
-productsList.forEach(p => {
-const imgUrl = getProductImage( p.id );
-const कार्ड = document.createElement('div');
-कार्ड.क्लासनाम = 'उत्पाद-कार्ड';
-कार्ड.इनरएचटीएमएल = `
-<img src="${imgUrl}" class="product-img" onerror="this.src=' https://placehold.co/160x160/f5f5f5/888888?text=Patanjali '">
-<div>
-<div class="category">${ p.cat }</div>
-<div class="product-name">पतंजलि ${ p.name } (${p.weight})</div>
-<div class='price'> मास्टरपी: ₹${p.mrp}</div>
-<div class="item-code">आइटम कोड: ${ p.id }</div>
-<div class='stock'>✓ स्टॉक में उपलब्ध</div>
-</div>
-`;
-कंटेनर.अपेंडचाइल्ड(कार्ड);
-});
-}
+        function displayProducts(productsList) {
+            const container = document.getElementById('productContainer');
+            container.innerHTML = '';
+            
+            productsList.forEach(p => {
+                const imgUrl = getProductImage(p.id);
+                const waText = encodeURIComponent(`नमस्ते भारतीय आरोग्य केंद्र, मुझे यह सामान ऑर्डर करना है:\nसामान का नाम: पतंजलि ${p.name}\nवजन: ${p.weight}\nरेट: ₹${p.mrp}`);
+                const waLink = `https://wa.me/918010291813?text=${waText}`;
 
-फ़ंक्शन searchProducts() {
-const query = document.getElementById('searchBar').value.toLowerCase();
-const फ़िल्टर किया गया = उत्पाद.फ़िल्टर(p => p.name.toLowerCase().includes(query) || p.cat.toLowerCase().includes(query));
-प्रदर्शित उत्पाद (फ़िल्टर किए गए);
-}
+                const card = document.createElement('div');
+                card.className = 'product-card';
+                card.innerHTML = `
+                    <img src="${imgUrl}" class="product-img" onerror="this.src='https://placehold.co/160x160/f5f5f5/888888?text=Patanjali'">
+                    <div>
+                        <div class="category">${p.cat}</div>
+                        <div class="product-name">पतंजलि ${p.name} (${p.weight})</div>
+                        <div class="price">एमआरपी: ₹${p.mrp}</div>
+                        <div class="item-code">कोड: ${p.id}</div>
+                        <a href="${waLink}" target="_blank" class="whatsapp-btn">
+                            🟢 WhatsApp ऑर्डर करें
+                        </a>
+                    </div>
+                `;
+                container.appendChild(card);
+            });
+        }
 
-// प्रथम पृष्ठ बार सभी उत्पाद लोड करें
-उत्पाद प्रदर्शित करें (उत्पाद);
-</script>
+        function searchProducts() {
+            const query = document.getElementById('searchBar').value.toLowerCase();
+            const filtered = products.filter(p => p.name.toLowerCase().includes(query) || p.cat.toLowerCase().includes(query));
+            displayProducts(filtered);
+        }
 
+        displayProducts(products);
+    </script>
 </body>
 </html>
-
